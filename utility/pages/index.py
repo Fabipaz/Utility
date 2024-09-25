@@ -1,6 +1,5 @@
 import reflex as rx
 from utility.complements.navbarin import navbar_icons_index
-from utility.views.porfoliop import portfoliop
 from utility.complements.banner import BannerState
 
 @rx.page(title="Home")
@@ -10,6 +9,7 @@ def index ()-> rx.Component:
         # rx.divider(),
         # banner(),
         # rx.divider(),
+        
         rx.box(
         rx.video(
             url="https://www.youtube.com/embed/9bZkp7q19f0",

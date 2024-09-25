@@ -1,6 +1,7 @@
 import reflex as rx
 from utility.states.loginstate import LoginState
 from utility.complements.navbarin import navbar_icons_index
+from ..views.fragment import spline_demo
 
 
 
@@ -15,8 +16,8 @@ def login():
                     rx.input(type="password", placeholder="Contraseña", on_blur=LoginState.set_password),
                     rx.button("Iniciar sesión", on_click=LoginState.login),
                 )
-            )
-            
+            ),
+            spline_demo(),
     ) 
 
 
