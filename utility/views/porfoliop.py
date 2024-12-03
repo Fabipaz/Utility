@@ -8,6 +8,7 @@ from utility.views.ohm import ohm
 from utility.views.unidades import unidades
 from utility.views.ups import ups
 from utility.views.lenscalculate import lens
+from utility.views.banda import banda
 # from utility.views.gramatica import gramatica
 
 
@@ -43,6 +44,9 @@ def portfoliop ()-> rx.Component:
                 ),
                 rx.card(
                     lens(),
+                ),
+                rx.card(
+                    banda(),
                 ),
                 # rx.card(
                 #     gramatica(),
